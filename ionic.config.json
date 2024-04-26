@@ -1,0 +1,7 @@
+{
+  "name": "SumativaSiego",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

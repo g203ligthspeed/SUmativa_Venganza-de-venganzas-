@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="container">
+    <h1>Temperatura Actual</h1>
+    <div class="termometro">
+      <div class="termometro-indicador" [style.height.%]="porcentaje"></div>
+    </div>
+
+    <!-- Aquí está el nuevo ProgressBar -->
+    <ion-range min="0" max="50" [(ngModel)]="porcentaje" (ionChange)="calcularTemperatura()">
+      <ion-label slot="start">0</ion-label>
+      <ion-label slot="end">50</ion-label>
+    </ion-range>     
+  </div>
+</ion-content>
